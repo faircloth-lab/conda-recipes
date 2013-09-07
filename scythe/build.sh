@@ -1,5 +1,9 @@
 #!/bin/bash
 
+BINARY=scythe
+BINARY_HOME=$PREFIX/bin
+POST_LINK=$BINARY_HOME/$BINARY
+
 # go to scythe checkout
 cd $SRC_DIR
 
@@ -10,7 +14,6 @@ git checkout fb3114743e59c6255b2f2a3bacced9816aef46fe -b fb3114743e
 make all
 
 # copy source to bin
-mkdir $PREFIX/bin
-POST_LINK=$PREFIX/bin/scythe
-cp scythe $POST_LINK
+mkdir $BINARY_HOME
+cp $SRC_DIR/$BINARY $POST_LINK
 chmod +x $POST_LINK
