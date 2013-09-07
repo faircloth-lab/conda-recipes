@@ -1,0 +1,33 @@
+# this is commit bab15f7d14b06400be37d50df7c092b1ec6fe0c5
+# I have named it 1.3a, since it incorporates the change to the
+# 1.2 tagged release (a usage change).
+package:
+  name: sickle     # lower case name of package, may contain '-' but no spaces
+  version: 1.3a   # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+  git_url: git@github.com:najoshi/sickle
+
+# The build number should be incremented for new builds of the same version
+build:            # (optional)
+  number: 1       # (optional, defaults to 0)
+
+# the build and runtime requirements:
+requirements:     # (optional)
+  build:
+    - zlib
+  run:
+    - zlib
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+  commands:
+    - sickle --help
+
+about:
+  home: https://github.com/najoshi/sickle
+  license: MIT
+
