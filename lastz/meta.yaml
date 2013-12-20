@@ -7,6 +7,7 @@ source:
 # from, it may be coming from a source tarball like:
     fn: lastz-1.02.00.tar.gz
     url: http://www.bx.psu.edu/miller_lab/dist/lastz-1.02.00.tar.gz
+    md5: b5b9a9b4e088aad720ff5ad6eaa7cac4
     patches:
         - makefile.patch  # remove -Werror from original source
         - lastz.patch
