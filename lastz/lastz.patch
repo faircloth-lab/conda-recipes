@@ -1,0 +1,29 @@
+--- src/lastz.orig	2013-12-20 12:56:46.000000000 -0800
++++ src/lastz.c	2013-12-20 13:11:04.000000000 -0800
+@@ -2432,7 +2432,7 @@
+ 	fprintf (helpout, "  --help=shortcuts       list blastz-compatible shortcuts\n");
+ 	fprintf (helpout, "  --help=yasra           list yasra-specific shortcuts\n");
+ 
+-	exit (EXIT_FAILURE);
++	exit (EXIT_SUCCESS);
+ 	}
+ 
+ 
+@@ -2697,7 +2697,7 @@
+ 		                  expanders[ix].argName, expanders[ix].expansion);
+ 		}
+ 
+-	exit (EXIT_FAILURE);
++	exit (EXIT_SUCCESS);
+ 	}
+ 
+ static void file_options (void);
+@@ -4175,7 +4175,7 @@
+ 
+ 		if ((strcmp_prefix (argv[0], "--out=")    == 0)
+ 		 || (strcmp_prefix (argv[0], "--output=") == 0))
+-			{ 
++			{
+ 			if (lzParams->outputFilename != NULL)
+ 				free_if_valid ("output file name", lzParams->outputFilename);
+ 			lzParams->outputFilename = copy_string (argStr);
