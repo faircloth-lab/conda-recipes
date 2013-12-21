@@ -1,0 +1,18 @@
+package:
+    name: boost         # lower case name of package, may contain '-' but no spaces
+    version: 1.02.00    # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: boost_1_55_0.tar.bz2
+    url: http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.bz2/download
+    md5: d6eef4b4cacb2183f2bf265a5a03a354
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+about:
+    home: http://www.boost.org/
+    license: Boost Software License
