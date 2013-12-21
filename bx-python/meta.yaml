@@ -1,0 +1,71 @@
+package:
+  name: bx-python
+  version: 0.7.1
+
+source:
+  fn: bx-python-0.7.1.tar.gz
+  url: https://pypi.python.org/packages/source/b/bx-python/bx-python-0.7.1.tar.gz
+  md5: cf26790ae22a691e40c80aa351d6dd16
+  patches:
+    - setup.patch   # remove call to download distribute
+
+build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - bx-python = bx-python:main
+    #
+    # Would create an entry point called bx-python that calls bx-python.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 1
+
+requirements:
+  build:
+    - python
+    - distribute
+    - nose
+    - numpy
+
+  run:
+    - python
+    - distribute
+    - numpy
+
+test:
+  # Python imports
+  imports:
+    - bx.align.sitemask
+    - bx.tabular
+    - bx.intervals
+    - bx.align
+    - bx.bbi
+    - bx.cookbook
+    - bx.arrays
+    - bx.motif.io
+    - bx.seq
+    - bx.intervals.operations
+    - bx.pwm
+    - bx.misc
+    - bx.motif
+    - bx.phylo
+    - bx.motif.logo
+    - bx_extras
+    - bx.align.tools
+    - bx
+    - bx.intseq
+
+  requires:
+    # Put any additional test requirements here.  For example
+    - nose
+
+about:
+  home: http://bitbucket.org/james_taylor/bx-python/wiki/Home
+  license:
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
