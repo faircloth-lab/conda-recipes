@@ -1,12 +1,19 @@
 #!/bin/bash
 
-# go to source location
-cd $SRC_DIR/core
+LIBEXEC=$PREFIX/libexec
+TEST_DIR=$PREFIX/test/mafft
 
 # make a libexec directory
-mkdir -p $PREFIX/libexec
+mkdir -p $LIBEXEC
+mkdir -p $TEST_DIR
 
-# export prefix in to temp variable so makefile
+# copy test data to location
+cp $SRC_DIR/test/* $TEST_DIR/
+
+# go to source location for build
+cd $SRC_DIR/core
+
+# export prefix to temp variable so makefile
 # will pick it up
 export PRFX=$PREFIX
 make all

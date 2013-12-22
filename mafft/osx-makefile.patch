@@ -1,5 +1,5 @@
---- core/Makefile	2013-12-21 15:30:05.000000000 -0800
-+++ core/Makefile	2013-12-21 15:36:41.000000000 -0800
+--- core/Makefile	2013-12-21 16:46:55.000000000 -0800
++++ core/Makefile	2013-12-22 07:47:59.000000000 -0800
 @@ -1,11 +1,11 @@
 -PREFIX = /usr/local
 +PREFIX = $(PRFX)
@@ -14,3 +14,12 @@
  # Comment out the above line if your compiler 
  # does not support TLS (thread-local strage).
  
+@@ -133,7 +133,7 @@
+ 	sed "s:_PROGS:$(PROGS):" univscript.tmpl  > univscript
+ 
+ mafft: mafft.tmpl mltaln.h
+-	sed "s:_LIBDIR:$(LIBDIR):" mafft.tmpl  > mafft
++	cat mafft.tmpl > mafft
+ 
+ mafft-homologs.rb: mafft-homologs.tmpl
+ #	cp mafft-homologs.tmpl mafft-homologs.rb
