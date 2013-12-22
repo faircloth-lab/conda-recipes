@@ -1,5 +1,5 @@
---- core/Makefile.orig	2013-12-21 16:46:55.000000000 -0800
-+++ core/Makefile.linux	2013-12-22 09:35:47.000000000 -0800
+--- core/Makefile	2013-12-21 16:46:55.000000000 -0800
++++ core/Makefile	2013-12-22 09:35:47.000000000 -0800
 @@ -1,4 +1,4 @@
 -PREFIX = /usr/local
 +PREFIX = $(PRFX)
