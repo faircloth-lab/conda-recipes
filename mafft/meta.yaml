@@ -1,0 +1,28 @@
+package:
+    name: mafft         # lower case name of package, may contain '-' but no spaces
+    version: 7.130      # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: mafft-7.130-without-extensions-src.tgz
+    url: http://mafft.cbrc.jp/alignment/software/mafft-7.130-without-extensions-src.tgz
+    md5: 53c76ad3d7b39df0ff4d814ff1c970b5
+    patches:
+        - osx-makefile.patch [osx]
+        - linux-makefile.patch [linux32 and linux64]
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+#test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+#    commands:
+#        - abyss-pe --help
+#        - ABYSS --help
+
+about:
+    home: http://mafft.cbrc.jp/alignment/software/
+    license: BSD

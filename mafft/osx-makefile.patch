@@ -1,0 +1,16 @@
+--- core/Makefile	2013-12-21 15:30:05.000000000 -0800
++++ core/Makefile	2013-12-21 15:36:41.000000000 -0800
+@@ -1,11 +1,11 @@
+-PREFIX = /usr/local
++PREFIX = $(PRFX)
+ LIBDIR = $(PREFIX)/libexec/mafft
+ BINDIR = $(PREFIX)/bin
+ MANDIR = $(PREFIX)/share/man/man1
+ 
+ #MNO_CYGWIN = -mno-cygwin
+ 
+-ENABLE_MULTITHREAD = -Denablemultithread
++# ENABLE_MULTITHREAD = -Denablemultithread
+ # Comment out the above line if your compiler 
+ # does not support TLS (thread-local strage).
+ 
