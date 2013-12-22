@@ -1,0 +1,19 @@
+package:
+  name: trimmomatic     # lower case name of package, may contain '-' but no spaces
+  version: 0.32         # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+  fn: Trimmomatic-0.32.zip
+  url: http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.32.zip
+  md5: 39edb1e60d21f45aeb1ab1632ffe732b
+
+# The build number should be incremented for new builds of the same version
+build:            # (optional)
+  number: 1       # (optional, defaults to 0)
+
+about:
+  home: http://www.usadellab.org/cms/?page=trimmomatic
+  license: GPL
+
