@@ -11,7 +11,7 @@ source:
     patches:
         - mafft-tmpl.patch
         - osx-makefile.patch [osx]
-        - linux-makefile.patch [linux32 and linux64]
+        - linux-makefile.patch [linux64]
 
 # The build number should be incremented for new builds of the same version
 build:              # (optional)
