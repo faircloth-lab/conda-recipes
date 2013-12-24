@@ -1,0 +1,26 @@
+package:
+    name: freebayes    # lower case name of package, may contain '-' but no spaces
+    version: 0.9.9     # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: freebayes-v0.9.9.tar.gz
+    url: http://s3.faircloth-lab.org/packages/freebayes-v0.9.9.tar.gz
+    sha1: 439eb38fad4e57a1fd04548438ca290d875bcbd7
+    patches:
+        - makefile.patch
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - freebayes -h
+
+about:
+    home: https://github.com/faircloth-lab/freebayes
+    license: MIT

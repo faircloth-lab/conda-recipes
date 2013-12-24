@@ -1,0 +1,15 @@
+--- Makefile	2013-12-24 13:10:16.000000000 -0800
++++ Makefile	2013-12-24 13:11:20.000000000 -0800
+@@ -5,10 +5,10 @@
+ 	cd src && $(MAKE) debug
+ 
+ install:
+-	cp bin/freebayes bin/bamleftalign /usr/local/bin/
++	cp bin/freebayes bin/bamleftalign $(PRFX)/bin/
+ 
+ uninstall:
+-	rm /usr/local/bin/freebayes /usr/local/bin/bamleftalign
++	rm $(PRFX)/bin/freebayes $(PRFX)/bin/bamleftalign
+ 
+ clean:
+ 	cd src && $(MAKE) clean
