@@ -1,0 +1,18 @@
+package:
+    name: bwa           # lower case name of package, may contain '-' but no spaces
+    version: 0.7.5a     # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: bwa-0.7.5a.tar.bz2
+    url: http://downloads.sourceforge.net/project/bio-bwa/bwa-0.7.5a.tar.bz2
+    sha1: 3ba4a2df24dc2a2578fb399dc77b3c240a5a18be
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+about:
+    home: http://bio-bwa.sourceforge.net/
+    license: GPL
