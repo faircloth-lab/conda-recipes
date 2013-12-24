@@ -1,0 +1,24 @@
+package:
+    name: bedtools      # lower case name of package, may contain '-' but no spaces
+    version: 2.18.1     # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: v2.18.1.tar.gz
+    url: https://github.com/arq5x/bedtools2/archive/v2.18.1.tar.gz
+    md5: f4cdafd8e75c5afe15422563c4f018ff
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - bedtools -h
+
+about:
+    home: https://github.com/arq5x/bedtools2
+    license: GPL
