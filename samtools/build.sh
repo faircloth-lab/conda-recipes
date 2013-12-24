@@ -13,3 +13,16 @@ make
 mkdir -p $BINARY_HOME
 cp $SRC_DIR/$BINARY1 $BINARY_HOME/
 chmod +x $BINARY_HOME/$BINARY1
+
+for PROG in bcftools vcfutils.pl
+do
+    cp $SRC_DIR/bcftools/$PROG $BINARY_HOME/
+    chmod +x $BINARY_HOME/$PROG
+done
+
+for PROG in bamcheck wgsim
+do
+    cp $SRC_DIR/misc/$PROG $BINARY_HOME/
+    chmod +x $BINARY_HOME/$PROG
+done
+
