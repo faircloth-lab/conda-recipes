@@ -46,6 +46,23 @@ You can search for specific packages using:
 
     conda search <package name>
 
+## Package structure
+
+Within your [conda][1] environment, the directory structure should look like:
+
+    Examples/
+    Launcher.app
+    bin/
+    conda-meta/
+    docs/
+    include/
+    jar/ # contains all java *.jar files
+    lib/
+    libexec/
+    python.app/
+    share/ # contains additional support files
+    test/ # contains text code for certain programs (e.g. mafft)
+
 ## Build requirements
 
 Ordinarily, you do not need to build packages from this repo.  We have done
