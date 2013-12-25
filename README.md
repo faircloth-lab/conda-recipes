@@ -8,6 +8,12 @@ is excellent for this task - to help install programs with very long
 dependency chains.  As such, it's largely equal to a cross-platform
 [homebrew][4] rather than just a [Python][3] package manger.
 
+## Installing [conda][1]
+
+To install [conda][1], see 
+https://store.continuum.io/static/img/Anaconda-Quickstart.pdf. You may want to install [miniconda][6] if you want a smaller distribution.
+
+
 ## Installing packages
 
 [conda][1] is a binary package manger.  As such, we have built binary versions 
@@ -21,10 +27,8 @@ We do not (at present) support Windows.
 ### Package repository
 
 All packages builds within are available from: 
-https://binstar.org/faircloth-lab
-
-To install packages from this repository using [conda][1], edit your `.condarc`
-file to look like:
+https://binstar.org/faircloth-lab. To install packages from this repository 
+using [conda][1], edit your `.condarc` file to look like:
 
     # channel locations. These override conda defaults, i.e., conda will
     # search *only* the channels listed here, in the order given. Use "default"
@@ -70,3 +74,4 @@ recipe, or just look at the at the [main conda-recipes repo][2], particularly th
 [3]: http://www.python.org
 [4]: http://faircloth-lab.org
 [5]: https://github.com/ContinuumIO/conda-recipes
+[6]: http://repo.continuum.io/miniconda/
