@@ -11,7 +11,7 @@ dependency chains.  As such, it's largely equal to a cross-platform
 ## Installing [conda][1]
 
 To install [conda][1], see 
-https://store.continuum.io/static/img/Anaconda-Quickstart.pdf. You may want to install [miniconda][6] if you want a smaller distribution.
+https://store.continuum.io/static/img/Anaconda-Quickstart.pdf. You can install [miniconda][6] if you want a smaller distribution.
 
 
 ## Installing packages
@@ -26,7 +26,7 @@ We do not (at present) support Windows.
 
 ### Package repository
 
-All packages builds within are available from: 
+Packages build from these recipes are available from the binstar repository: 
 https://binstar.org/faircloth-lab. To install packages from this repository 
 using [conda][1], edit your `.condarc` file to look like:
 
@@ -42,7 +42,17 @@ Then install a given package using:
 
     conda install <package name>
 
+You can search for specific packages using:
+
+    conda search <package name>
+
 ## Build requirements
+
+Ordinarily, you do not need to build packages from this repo.  We have done
+this for you and the binary versions are available from 
+https://binstar.org/faircloth-lab (see above).  However, if you are interested
+in how we build each package or want to clone/contribute to these build files,
+build instructions are below.
 
 ### OSX
 
