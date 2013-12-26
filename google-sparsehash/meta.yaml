@@ -1,0 +1,18 @@
+package:
+    name: google-sparsehash     # lower case name of package, may contain '-' but no spaces
+    version: 2.0.2              # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: sparsehash-2.0.2.tar.gz
+    url: https://sparsehash.googlecode.com/files/sparsehash-2.0.2.tar.gz
+    md5: 1db92ed7f257d9b5f14a309d75e8a1d4
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+about:
+    home: https://code.google.com/p/sparsehash/
+    license: BSD

@@ -1,0 +1,8 @@
+--- src/Makefile    2013-12-20 11:40:20.000000000 -0800
++++ src/Makefile    2013-12-20 11:40:31.000000000 -0800
+@@ -28,7 +28,7 @@
+ #
+ #---------
+
+-definedForAll = -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE
++definedForAll = -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE

@@ -1,0 +1,19 @@
+--- core/mafft.tmpl	2013-12-22 07:35:09.000000000 -0800
++++ core/mafft.tmpl	2013-12-22 07:48:57.000000000 -0800
+@@ -1,5 +1,7 @@
+ #! /bin/sh
+ 
++bindir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; export bindir
++
+ er=0;
+ myself=`dirname "$0"`/`basename "$0"`; export myself
+ version="v7.130b (2013/12/05)"; export version
+@@ -24,7 +26,7 @@
+ if [ "$MAFFT_BINARIES" ]; then
+ 	prefix="$MAFFT_BINARIES"
+ else
+-	prefix=_LIBDIR
++	prefix=$bindir/../libexec/mafft
+ fi
+ export prefix
+ 

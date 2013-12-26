@@ -1,0 +1,27 @@
+package:
+    name: lastz         # lower case name of package, may contain '-' but no spaces
+    version: 1.02.00    # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: lastz-1.02.00.tar.gz
+    url: http://www.bx.psu.edu/miller_lab/dist/lastz-1.02.00.tar.gz
+    md5: b5b9a9b4e088aad720ff5ad6eaa7cac4
+    patches:
+        - makefile.patch  # remove -Werror from original source
+        - lastz.patch
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - lastz --help
+
+about:
+    home: http://www.bx.psu.edu/~rsharris/lastz/
+    license: MIT

@@ -1,0 +1,30 @@
+package:
+    name: abyss         # lower case name of package, may contain '-' but no spaces
+    version: 1.3.7    # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: abyss-1.3.7.tar.gz
+    url: http://www.bcgsc.ca/platform/bioinfo/software/abyss/releases/1.3.7/abyss-1.3.7.tar.gz
+    md5: 5d34be7ae850f79b5fe06acf9fca8bc8
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+
+requirements:
+  build:
+    - boost
+    - google-sparsehash
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - abyss-pe --help
+        - ABYSS --help
+
+about:
+    home: http://www.bcgsc.ca/platform/bioinfo/software/abyss
+    license: GPL
