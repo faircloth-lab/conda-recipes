@@ -1,11 +1,11 @@
 package:
   name: illumiprocessor
-  version: 2.0.2
+  version: 2.0.3
 
 source:
-  fn: v2.0.2.tar.gz
-  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.2.tar.gz
-  md5: 712b12b262a61ac1e18cdba308b40808
+  fn: v2.0.3.tar.gz
+  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.3.tar.gz
+  sha1: 4e14a88e30314fa3192052b5bd9fed26a7af1707
 
 build:
   # entry_points:
@@ -19,7 +19,7 @@ build:
 
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1
+  number: 0
 
 requirements:
   build:
