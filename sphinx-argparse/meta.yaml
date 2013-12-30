@@ -1,0 +1,61 @@
+package:
+  name: sphinx-argparse
+  version: 0.1.4
+
+source:
+  fn: sphinx-argparse-0.1.4.tar.gz
+  url: https://pypi.python.org/packages/source/s/sphinx-argparse/sphinx-argparse-0.1.4.tar.gz
+  md5: 26f1cbc6ba4dab80b20d639e22a76b2c
+  patches:
+   # List any patch files here
+   - setup.patch
+
+# build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - sphinx-argparse = sphinx-argparse:main
+    #
+    # Would create an entry point called sphinx-argparse that calls sphinx-argparse.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - sphinx
+    - setuptools
+
+  run:
+    - python
+    - sphinx
+    - setuptools
+
+test:
+  # Python imports
+  imports:
+    - sphinxarg
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: https://pypi.python.org/pypi/sphinx-argparse
+  license: MIT
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
