@@ -7,8 +7,8 @@ POST_LINK=$BINARY_HOME/$BINARY
 # go to scythe checkout
 cd $SRC_DIR
 
-# checkout appropriate commit for current version 0.991
-git checkout fb3114743e59c6255b2f2a3bacced9816aef46fe -b fb3114743e
+# checkout appropriate commit for current version 0.992
+git checkout 9b965ee399a18caf1f96e433f78d405620e3a1df -b 9b965ee399
 
 # build source
 make all

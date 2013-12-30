@@ -1,7 +1,7 @@
-# this is commit fb3114743e59c6255b2f2a3bacced9816aef46fe
+# this is commit 9b965ee399a18caf1f96e433f78d405620e3a1df
 package:
   name: scythe     # lower case name of package, may contain '-' but no spaces
-  version: 0.991   # version of package. Should use the PEP-386 verlib conventions.
+  version: 0.992   # version of package. Should use the PEP-386 verlib conventions.
 
 source:
 # The source section specifies where the source code of the package is coming
@@ -10,7 +10,7 @@ source:
 
 # The build number should be incremented for new builds of the same version
 build:            # (optional)
-  number: 1       # (optional, defaults to 0)
+  number: 0       # (optional, defaults to 0)
 
 # the build and runtime requirements:
 requirements:     # (optional)
