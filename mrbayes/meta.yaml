@@ -1,6 +1,6 @@
 package:
-    name: mrbayes         # lower case name of package, may contain '-' but no spaces
-    version: 8.0.1      # version of package. Should use the PEP-386 verlib conventions.
+    name: mrbayes      # lower case name of package, may contain '-' but no spaces
+    version: 3.2.2     # version of package. Should use the PEP-386 verlib conventions.
 
 source:
 # The source section specifies where the source code of the package is coming
