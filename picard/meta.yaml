@@ -1,0 +1,18 @@
+package:
+  name: picard          # lower case name of package, may contain '-' but no spaces
+  version: 1.106        # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+  fn: picard-tools-1.106.zip
+  url: http://downloads.sourceforge.net/project/picard/picard-tools/1.106/picard-tools-1.106.zip
+  md5: 98afc3907e7be180ba86fb556f29dfe8
+
+# The build number should be incremented for new builds of the same version
+build:            # (optional)
+  number: 0       # (optional, defaults to 0)
+
+about:
+  home: http://picard.sourceforge.net/
+  license: GPL
