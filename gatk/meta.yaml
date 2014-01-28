@@ -1,0 +1,18 @@
+package:
+  name: gatk-lite       # lower case name of package, may contain '-' but no spaces
+  version: 2.3.0        # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+  fn: GenomeAnalysisTKLite-2.3-9-gdcdccbb.tar.bz2
+  url: http://s3.faircloth-lab.org/packages/GenomeAnalysisTKLite-2.3-9-gdcdccbb.tar.bz2
+  sha1: 374b0c1b43cb09980a756559300dbc7074e88a09
+
+# The build number should be incremented for new builds of the same version
+build:            # (optional)
+  number: 0       # (optional, defaults to 0)
+
+about:
+  home: http://www.broadinstitute.org/gatk/
+  license: MIT
