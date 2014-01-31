@@ -1,0 +1,44 @@
+package:
+  name: phyluce
+  version: 2.0.0b
+
+source:
+  fn: v2.0.0b.tar.gz
+  url: https://github.com/faircloth-lab/phyluce/archive/v2.0.0b.tar.gz
+  sha1: 6cc7e7b3218c13b70173f9685e006c980b7e6757
+
+build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - bx-python = bx-python:main
+    #
+    # Would create an entry point called bx-python that calls bx-python.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - biopython
+    - velvet
+    - abyss
+    - muscle
+    - lastz
+    - bwa
+    - dendropy
+    - gatk-lite
+    - picard
+    - raxml
+    - samtools
+
+about:
+  home: https://github.com/faircloth-lab/phyluce/
+  license: BSD
