@@ -1,11 +1,11 @@
 package:
   name: illumiprocessor
-  version: 2.0.5
+  version: 2.0.6
 
 source:
-  fn: v2.0.5.tar.gz
-  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.5.tar.gz
-  sha1: 6add15031cb8f30846c8e9b6573a633725df32f8
+  fn: v2.0.6.tar.gz
+  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.6.tar.gz
+  sha1: f9b514f1dff26d689ab3a7ea53f24416d1078223
 
 build:
   # entry_points:
