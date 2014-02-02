@@ -1,0 +1,24 @@
+package:
+    name: make         # lower case name of package, may contain '-' but no spaces
+    version: 3.8.2      # version of package. Should use the PEP-386 verlib conventions.
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: make-3.82.tar.gz
+    url: http://ftp.gnu.org/gnu/make/make-3.82.tar.gz
+    sha1: 92d1b87a30d1c9482e52fb4a68e8a355e7946331
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 0       # (optional, defaults to 0)
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - make --version
+
+about:
+    home: http://www.gnu.org/software/make/
+    license: GPL
