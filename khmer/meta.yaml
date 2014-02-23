@@ -1,0 +1,51 @@
+package:
+  name: khmer
+  version: !!str 0.7.1
+
+source:
+  fn: v0.7.1.tar.gz
+  url: https://github.com/ged-lab/khmer/archive/v0.7.1.tar.gz
+  sha1: a0052125dacb0ef3b9c186650d8a4cc51b704072
+
+  patches:
+     # List any patch files here
+     - setup.patch
+
+build:
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - jellyfish = jellyfish:main
+    #
+    # Would create an entry point called jellyfish that calls jellyfish.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  number: 2
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - sphinx
+    - nose
+    - zlib
+    - bzip2
+    - screed
+
+  run:
+    - python
+    - screed
+    - setuptools
+
+test:
+  imports:
+    - khmer
+  requires:
+    - nose
+
+about:
+  home: https://github.com/ged-lab/khmer
+  license: BSD License

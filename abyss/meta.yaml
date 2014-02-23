@@ -11,7 +11,7 @@ source:
 
 # The build number should be incremented for new builds of the same version
 build:              # (optional)
-    number: 2       # (optional, defaults to 0)
+    number: 3       # (optional, defaults to 0)
 
 requirements:
   build:
