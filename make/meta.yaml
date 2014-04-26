@@ -1,6 +1,6 @@
 package:
-    name: make         # lower case name of package, may contain '-' but no spaces
-    version: 3.8.2      # version of package. Should use the PEP-386 verlib conventions.
+    name: condaflmake         # lower case name of package, may contain '-' but no spaces
+    version: !!str 3.8.2      # version of package. Should use the PEP-386 verlib conventions.
 
 source:
 # The source section specifies where the source code of the package is coming
@@ -11,13 +11,13 @@ source:
 
 # The build number should be incremented for new builds of the same version
 build:              # (optional)
-    number: 0       # (optional, defaults to 0)
+    number: 1       # (optional, defaults to 0)
 
 test:
 # commands we want to make sure they work, which are expected to get installed
 # by the package
     commands:
-        - make --version
+        - condaflmake --version
 
 about:
     home: http://www.gnu.org/software/make/
