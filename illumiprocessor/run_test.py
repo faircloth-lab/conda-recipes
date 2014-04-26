@@ -17,10 +17,13 @@ import subprocess
 
 class TestAlignments(unittest.TestCase):
     def setUp(self):
-        cmd = ["java", "-version"]
-        proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        self.stdout, self.stderr = proc.communicate()
-        self.result_split = self.stderr.strip().split("\n")
+        try:
+            cmd = ["java", "-version"]
+            proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            self.stdout, self.stderr = proc.communicate()
+            self.result_split = self.stderr.strip().split("\n")
+        except:
+            raise OSError("Java does not appear to be installed")
 
     def get_version(self, s):
         result = re.search('java version "(.*)"', s)
@@ -37,11 +40,7 @@ class TestAlignments(unittest.TestCase):
         cmd = ["java", "-jar", os.path.join(os.path.join(os.environ["PREFIX"], "jar", "trimmomatic.jar"))]
         proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         self.stdout, self.stderr = proc.communicate()
-        assert self.stderr == "Usage: \n       PE [-threads <threads>] [-phred33|-phred64]" + \
-        " [-trimlog <trimLogFile>] [-basein <inputBase> | <inputFile1> <inputFile2>]" + \
-        " [-baseout <outputBase> | <outputFile1P> <outputFile1U> <outputFile2P>" + \
-        " <outputFile2U>] <trimmer1>...\n   or: \n       SE [-threads <threads>]" + \
-        " [-phred33|-phred64] [-trimlog <trimLogFile>] <inputFile> <outputFile> <trimmer1>...\n"
+        assert self.stderr == "Usage: "
 
 
 if __name__ == '__main__':
