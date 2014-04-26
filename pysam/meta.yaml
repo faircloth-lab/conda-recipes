@@ -1,6 +1,6 @@
 package:
   name: pysam
-  version: 0.7.7
+  version: !!str 0.7.7
 
 source:
   fn: pysam-0.7.7.tar.gz
