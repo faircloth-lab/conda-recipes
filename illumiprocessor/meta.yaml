@@ -1,24 +1,13 @@
 package:
   name: illumiprocessor
-  version: 2.0.6
+  version: 2.0.7
 
 source:
-  fn: v2.0.6.tar.gz
-  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.6.tar.gz
-  sha1: f9b514f1dff26d689ab3a7ea53f24416d1078223
+  fn: v2.0.7.tar.gz
+  url: https://github.com/faircloth-lab/illumiprocessor/archive/v2.0.7.tar.gz
+  sha1: 337385bccf0a0e8b2bc844714153831485229979
 
 build:
-  # entry_points:
-    # Put any entry points (scripts to be generated automatically) here. The
-    # syntax is module:function.  For example
-    #
-    # - bx-python = bx-python:main
-    #
-    # Would create an entry point called bx-python that calls bx-python.main()
-
-
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
   number: 0
 
 requirements:
