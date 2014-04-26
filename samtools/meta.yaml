@@ -1,17 +1,14 @@
 package:
-    name: samtools      # lower case name of package, may contain '-' but no spaces
-    version: 0.1.19     # version of package. Should use the PEP-386 verlib conventions.
+    name: samtools
+    version: !!str 0.1.19
 
 source:
-# The source section specifies where the source code of the package is coming
-# from, it may be coming from a source tarball like:
     fn: samtools-0.1.19.tar.bz2
     url: http://downloads.sourceforge.net/project/samtools/samtools/0.1.19/samtools-0.1.19.tar.bz2
     sha1: ff3f4cf40612d4c2ad26e6fcbfa5f8af84cbe881
 
-# The build number should be incremented for new builds of the same version
-build:              # (optional)
-    number: 1       # (optional, defaults to 0)
+build:
+    number: 2
 
 about:
     home: http://samtools.sourceforge.net/

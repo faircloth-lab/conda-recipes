@@ -10,7 +10,7 @@ Copyright (c) 2013 Brant C. Faircloth. All rights reserved.
 """
 
 import os
-import re
+#import re
 import unittest
 import subprocess
 
