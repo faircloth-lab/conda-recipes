@@ -40,7 +40,7 @@ class TestAlignments(unittest.TestCase):
         cmd = ["java", "-jar", os.path.join(os.path.join(os.environ["PREFIX"], "jar", "trimmomatic.jar"))]
         proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         self.stdout, self.stderr = proc.communicate()
-        assert self.stderr == "Usage: "
+        assert self.stderr.startswith("Usage: ")
 
 
 if __name__ == '__main__':
