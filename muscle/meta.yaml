@@ -1,21 +1,17 @@
 package:
-    name: muscle         # lower case name of package, may contain '-' but no spaces
-    version: 3.8.31      # version of package. Should use the PEP-386 verlib conventions.
+    name: muscle
+    version: !!str 3.8.31
 
 source:
-# The source section specifies where the source code of the package is coming
-# from, it may be coming from a source tarball like:
     fn: muscle3.8.31_src.tar.gz
     url: http://www.drive5.com/muscle/downloads3.8.31/muscle3.8.31_src.tar.gz
     sha1: 2fe55db73ff4e7ac6d4ca692f8f213d1c5071dac
 
-# The build number should be incremented for new builds of the same version
-build:              # (optional)
-    number: 0       # (optional, defaults to 0)
+
+build:
+    number: 1
 
 test:
-# commands we want to make sure they work, which are expected to get installed
-# by the package
     commands:
         - muscle
 
