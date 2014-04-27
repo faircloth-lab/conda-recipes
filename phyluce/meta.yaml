@@ -1,11 +1,10 @@
 package:
   name: phyluce
-  version: 2.0.0b
+  version: 2.0.0-working
 
 source:
-  fn: v2.0.0b.tar.gz
-  url: https://github.com/faircloth-lab/phyluce/archive/v2.0.0b.tar.gz
-  sha1: 6cc7e7b3218c13b70173f9685e006c980b7e6757
+  git_url: https://github.com/faircloth-lab/phyluce/
+  git_tag: working
 
 build:
   number: 0
