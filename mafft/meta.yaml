@@ -10,8 +10,8 @@ source:
     md5: 53c76ad3d7b39df0ff4d814ff1c970b5
     patches:
         - mafft-tmpl.patch
-        - osx-makefile.patch [osx]
-        - linux-makefile.patch [linux64]
+        - osx-makefile.patch    # [osx]
+        - linux-makefile.patch  # [linux64]
 
 # The build number should be incremented for new builds of the same version
 build:              # (optional)
