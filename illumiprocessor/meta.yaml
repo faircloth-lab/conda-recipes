@@ -1,6 +1,6 @@
 package:
   name: illumiprocessor
-  version: 2.0.7
+  version: !!str 2.0.7
 
 source:
   fn: v2.0.7.tar.gz

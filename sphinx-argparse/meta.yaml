@@ -1,6 +1,6 @@
 package:
   name: sphinx-argparse
-  version: 0.1.4
+  version: !!str 0.1.4
 
 source:
   fn: sphinx-argparse-0.1.4.tar.gz

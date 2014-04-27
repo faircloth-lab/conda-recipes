@@ -1,6 +1,6 @@
 package:
   name: dendropy
-  version: 3.12.0
+  version: !!str 3.12.0
 
 source:
   fn: DendroPy-3.12.0.tar.gz

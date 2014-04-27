@@ -1,6 +1,6 @@
 package:
     name: raxml
-    version: 8.0.19
+    version: !!str 8.0.19
 
 source:
 # The source section specifies where the source code of the package is coming

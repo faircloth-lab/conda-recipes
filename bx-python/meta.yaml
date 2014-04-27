@@ -1,6 +1,6 @@
 package:
   name: bx-python
-  version: 0.7.1
+  version: !!str 0.7.1
 
 source:
   fn: bx-python-0.7.1.tar.gz
