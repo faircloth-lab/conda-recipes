@@ -1,6 +1,6 @@
 package:
-    name: bedtools      # lower case name of package, may contain '-' but no spaces
-    version: !!str 2.18.1     # version of package. Should use the PEP-386 verlib conventions.
+    name: bedtools
+    version: !!str 2.18.1
 
 source:
 # The source section specifies where the source code of the package is coming
