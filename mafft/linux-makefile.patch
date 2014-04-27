@@ -21,8 +21,8 @@
  ln -s mafft mafft-einsi; ln -s mafft mafft-xinsi; ln -s mafft mafft-qinsi;\
 -rm -f mafft-profile mafft-profile.exe; ln -s $(LIBDIR)/mafft-profile .; \
 -rm -f mafft-distance mafft-distance.exe; ln -s $(LIBDIR)/mafft-distance . )
-+rm -f mafft-profile mafft-profile.exe; ln -s ../libexec/mafft-profile .; \
-+rm -f mafft-distance mafft-distance.exe; ln -s ../libexec/mafft-distance . )
++rm -f mafft-profile mafft-profile.exe; ln -s ../libexec/mafft/mafft-profile .; \
++rm -f mafft-distance mafft-distance.exe; ln -s ../libexec/mafft/mafft-distance . )
  
  	mkdir -p $(MANDIR)
  	chmod 755 $(MANDIR)
