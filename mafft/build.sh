@@ -1,10 +1,10 @@
 #!/bin/bash
 
-LIBEXEC=$PREFIX/libexec
+#LIBEXEC=$PREFIX/libexec
 TEST_DIR=$PREFIX/test/mafft
 
 # make a libexec directory
-mkdir -p $LIBEXEC
+#mkdir -p $LIBEXEC
 mkdir -p $TEST_DIR
 
 # copy test data to location

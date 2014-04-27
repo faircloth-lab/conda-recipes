@@ -1,5 +1,5 @@
---- core/Makefile	2013-12-21 16:46:55.000000000 -0800
-+++ core/Makefile	2013-12-22 07:47:59.000000000 -0800
+--- core/Makefile	2014-04-26 16:38:17.000000000 -0700
++++ core/Makefile	2014-04-26 17:18:06.000000000 -0700
 @@ -1,11 +1,11 @@
 -PREFIX = /usr/local
 +PREFIX = $(PRFX)
@@ -23,3 +23,14 @@
  
  mafft-homologs.rb: mafft-homologs.tmpl
  #	cp mafft-homologs.tmpl mafft-homologs.rb
+@@ -521,8 +521,8 @@
+ ln -s mafft mafft-linsi; ln -s mafft mafft-ginsi; ln -s mafft mafft-fftns; \
+ ln -s mafft mafft-fftnsi; ln -s mafft mafft-nwns; ln -s mafft mafft-nwnsi; \
+ ln -s mafft mafft-einsi; ln -s mafft mafft-xinsi; ln -s mafft mafft-qinsi;\
+-rm -f mafft-profile mafft-profile.exe; ln -s $(LIBDIR)/mafft-profile .; \
+-rm -f mafft-distance mafft-distance.exe; ln -s $(LIBDIR)/mafft-distance . )
++rm -f mafft-profile mafft-profile.exe; ln -s ../libexec/mafft-profile .; \
++rm -f mafft-distance mafft-distance.exe; ln -s ../libexec/mafft-distance . )
+ 
+ 	mkdir -p $(MANDIR)
+ 	chmod 755 $(MANDIR)
