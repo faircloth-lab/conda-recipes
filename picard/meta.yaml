@@ -1,6 +1,6 @@
 package:
   name: picard          # lower case name of package, may contain '-' but no spaces
-  version: 1.106        # version of package. Should use the PEP-386 verlib conventions.
+  version: !!str 1.106        # version of package. Should use the PEP-386 verlib conventions.
 
 source:
 # The source section specifies where the source code of the package is coming

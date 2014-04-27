@@ -1,6 +1,6 @@
 package:
   name: sphinxcontrib-programoutput
-  version: 0.8
+  version: !!str 0.8
 
 source:
   fn: sphinxcontrib-programoutput-0.8.tar.gz

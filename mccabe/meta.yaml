@@ -1,6 +1,6 @@
 package:
     name: mccabe
-    version: 0.2.1
+    version: !!str 0.2.1
 
 source:
     fn: mccabe-0.2.1.tar.gz
