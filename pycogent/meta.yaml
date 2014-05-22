@@ -1,0 +1,31 @@
+package:
+  name: pycogent
+  version: !!str 0.7.7
+
+source:
+  fn: PyCogent-1.5.3.tgz
+  url: http://downloads.sourceforge.net/project/pycogent/PyCogent/1.5.3/PyCogent-1.5.3.tgz
+  sha1: cca88704e9c0b91b89087beac28eabca4c99c102
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - numpy
+    - zlib
+
+  run:
+    - python
+    - numpy
+    - zlib
+
+test:
+  # Python imports
+  imports:
+    - cogent
+
+about:
+  home: http://pycogent.org/
+  license: GPL
