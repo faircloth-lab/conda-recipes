@@ -3,12 +3,12 @@ package:
   version: !!str 3.12.0
 
 source:
-  fn: DendroPy-3.12.0.tar.gz
-  url: https://pypi.python.org/packages/source/D/DendroPy/DendroPy-3.12.0.tar.gz
-  md5: 6971ac9a8508b4198fd357fab0affc84
-#  patches:
+  fn: v3.12.1.tar.gz
+  url: https://github.com/jeetsukumaran/DendroPy/archive/v3.12.1.tar.gz
+  sha1: eeef5219d06994a1c51903c63d639a1229a1661d
+  patches:
    # List any patch files here
-   # - fix.patch
+   - setup.patch
 
 build:
   entry_points:
@@ -27,11 +27,9 @@ build:
 requirements:
   build:
     - python
-    - distribute
 
   run:
     - python
-    - distribute
 
 test:
   # Python imports
@@ -47,6 +45,7 @@ test:
     - dendropy.mathlib
 
   commands:
+    - sumtrees.py -h
     # You can put test commands to be run here.  Use this to test that the
     # entry points work.
 
@@ -61,7 +60,3 @@ test:
 about:
   home: http://packages.python.org/DendroPy/
   license: BSD License
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml
