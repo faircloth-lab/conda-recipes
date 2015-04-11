@@ -1,0 +1,20 @@
+--- Trinity
++++ Trinity
+@@ -6,7 +6,7 @@ use threads;
+ no strict qw(subs refs);
+ 
+ use FindBin;
+-use lib ("$FindBin::Bin/PerlLib");
++use lib ("$FindBin::RealBin/PerlLib");
+ use File::Basename;
+ use Time::localtime;
+ use Cwd;
+@@ -22,7 +22,7 @@ my $VERSION = "v2.0.6";
+ 
+ BEGIN {
+ 
+-    $ENV{TRINITY_HOME} = "$FindBin::Bin";
++    $ENV{TRINITY_HOME} = "$FindBin::RealBin";
+ 
+ }
+ 

@@ -19,8 +19,8 @@ https://store.continuum.io/static/img/Anaconda-Quickstart.pdf. You can install [
 [conda][1] is a binary package manger.  As such, we have built binary versions 
 of most/all of the packages in this repository for the following platforms:
 
-* OS X (x86_64)
-* Linux (x86_64)
+* OS X (x86_64) [tested on 10.9]
+* Linux (x86_64) [tested on CentOS 6.5 and Ubuntu 14.04]
 
 We do not (at present) support Windows.
 
