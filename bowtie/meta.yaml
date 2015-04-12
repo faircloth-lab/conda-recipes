@@ -1,0 +1,26 @@
+package:
+    name: bowtie
+    version: !!str 1.1.1
+
+source:
+    fn: bowtie-1.1.1-src.zip
+    url: http://sourceforge.net/projects/bowtie-bio/files/bowtie/1.1.1/bowtie-1.1.1-src.zip
+    sha1: 4cf14bef901ce3a19be0674603134c33ebfd25ae
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 0       # (optional, defaults to 0)
+
+requirements:
+  run:
+    - python
+
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - bowtie --help
+
+about:
+    home: http://bowtie-bio.sourceforge.net/index.shtml
+    license: The Artistic License
