@@ -1,0 +1,22 @@
+package:
+    name: gblocks
+    version: !!str 0.91b
+
+source:
+# The source section specifies where the source code of the package is coming
+# from, it may be coming from a source tarball like:
+    fn: gblocks-v0.91b.tar.gz
+    url: http://s3.faircloth-lab.org/packages/gblocks-v0.91b.tar.gz
+    sha1: 0b445dcea4e493e334342d7e3d27e61e5cd89469
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 0       # (optional, defaults to 0)
+
+    # Whether binary files should be made relocatable using install_name_tool
+    # on OS X or patchelf on Linux.
+    binary_relocation: false # (defaults to true)
+
+about:
+    home: http://molevol.cmima.csic.es/castresana/Gblocks.html
+    license: Copyright (c) Jose Castresana
