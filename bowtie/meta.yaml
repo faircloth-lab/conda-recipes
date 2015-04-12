@@ -6,6 +6,8 @@ source:
     fn: bowtie-1.1.1-src.zip
     url: http://sourceforge.net/projects/bowtie-bio/files/bowtie/1.1.1/bowtie-1.1.1-src.zip
     sha1: 4cf14bef901ce3a19be0674603134c33ebfd25ae
+    patches:
+        - linux-makefile.patch # [linux64]
 
 # The build number should be incremented for new builds of the same version
 build:              # (optional)

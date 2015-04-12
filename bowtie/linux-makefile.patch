@@ -1,0 +1,14 @@
+--- Makefile
++++ Makefile
+@@ -50,8 +50,11 @@ endif
+ 
+ LINUX = 0
+ ifneq (,$(findstring Linux,$(shell uname)))
++    CPP = g++
++    CC = gcc
+     LINUX = 1
+     EXTRA_FLAGS += -Wl,--hash-style=both
++    EXTRA_FLAGS:=$(filter-out -stdlib=libstdc++,$(C++FLAGS))
+ endif
+ 
+ MM_DEF = 
