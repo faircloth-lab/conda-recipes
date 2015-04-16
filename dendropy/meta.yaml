@@ -1,6 +1,6 @@
 package:
   name: dendropy
-  version: !!str 3.12.0
+  version: !!str 3.12.1
 
 source:
   fn: v3.12.1.tar.gz
