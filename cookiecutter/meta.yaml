@@ -1,11 +1,11 @@
 package:
   name: cookiecutter
-  version: !!str 0.7.0
+  version: !!str 0.7.2
 
 source:
-  fn: cookiecutter-0.7.0.tar.gz
-  url: https://pypi.python.org/packages/source/c/cookiecutter/cookiecutter-0.7.0.tar.gz
-  md5: 5f1d2df78589210ef1765b69908b6319
+  fn: cookiecutter-0.7.2.tar.gz
+  url: https://pypi.python.org/packages/source/c/cookiecutter/cookiecutter-0.7.2.tar.gz
+  md5: 9201ca32ddd8e3ad4e43f8d822e78371
 #  patches:
    # List any patch files here
    # - fix.patch
