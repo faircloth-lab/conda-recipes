@@ -17,11 +17,11 @@ requirements:
     - python
     - distribute
     - nose
-    - numpy
+    - numpy >=1.7.0
 
   run:
     - python
-    - numpy
+    - numpy >=1.7.0
 
 test:
   # Python imports

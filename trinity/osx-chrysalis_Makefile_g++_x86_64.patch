@@ -1,0 +1,30 @@
+--- Chrysalis/Makefile_g++_x86_64
++++ Chrysalis/Makefile_g++_x86_64
+@@ -1,6 +1,6 @@
+ 
+-CPLUSPLUS	= g++
+-CC		= gcc
++CPLUSPLUS	= /usr/local/bin/g++-4.9
++CC		= /usr/local/bin/gcc-4.9
+ 
+ # Location of Xerces XML parser library:
+ XERCES_INC	= -ISpines
+@@ -9,15 +9,15 @@ XERCES_INC	= -ISpines
+ 
+ 
+ # Need to use old Compaq assembler:
+-SYS_OPT		+= 
++SYS_OPT		+=
+ 
+ SYS_LANG	+= -mieee-fp
+ 
+ SYS_INCS	+=
+ 
+-SYS_LINK	+= 
++SYS_LINK	+=
+ 
+-SYS_LIBS	+= 
++SYS_LIBS	+=
+ 
+ SYS_WARN	+= -ansi -pedantic -Wno-long-long
+ 
