@@ -37,6 +37,19 @@ requirements:
     - trinity 2.0.6
     - velvet 1.2.10
 
+test:
+# commands we want to make sure they work, which are expected to get installed
+# by the package
+    commands:
+        - phyluce_assembly_match_contigs_to_probes --help
+        - phyluce_assembly_get_match_counts --help
+        - phyluce_assembly_get_fastas_from_match_counts --help
+        - phyluce_align_seqcap_align --help
+        - phyluce_align_get_align_summary_data --help
+        - phyluce_align_format_nexus_files_for_raxml --help
+    imports:
+      - phyluce
+
 about:
   summary: software for UCE (and general) phylogenomics
   home: https://github.com/faircloth-lab/phyluce/
