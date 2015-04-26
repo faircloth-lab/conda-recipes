@@ -16,8 +16,6 @@ import sys
 import unittest
 from phyluce.pth import get_user_path, get_user_param
 
-import pdb
-
 class TestBinaries(unittest.TestCase):
     def setUp(self):
         self.binaries = [
