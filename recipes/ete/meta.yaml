@@ -1,0 +1,38 @@
+package:
+  name: ete
+  version: !!str 2.3
+
+source:
+  fn: 2.3.tar.gz
+  url: https://github.com/jhcepas/ete/archive/2.3.tar.gz
+  sha1: 2272784f022656ae40a8ec55542279ad4fad01ea
+
+# The build number should be incremented for new builds of the same version
+build:              # (optional)
+    number: 1       # (optional, defaults to 0)
+  # Optional Python entry points
+    entry_points:
+    # This creates an entry point named bsdiff4 that calls
+    # bsdiff4.cli.main_bsdiff4()
+    - ete = ete2.tools.ete:main
+    - console_scripts = ete2.tools.ete:main
+
+requirements:
+  build:
+    - python
+    - numpy
+
+  run:
+    - python
+    - numpy
+
+test:
+  commands:
+    - ete -h
+  # Python imports
+  imports:
+    - ete2
+
+about:
+  home: http://etetoolkit.org/
+  license: BSD License
