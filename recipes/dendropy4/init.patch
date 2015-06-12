@@ -1,0 +1,17 @@
+--- dendropy/__init__.py.old
++++ dendropy/__init__.py
+@@ -112,9 +112,12 @@ def _get_revision_object():
+
+ def revision_description():
+     __revision__ = _get_revision_object()
+-    if __revision__.is_available:
+-        revision_text = " ({})".format(__revision__)
+-    else:
++    try:
++        if __revision__.is_available:
++            revision_text = " ({})".format(__revision__)
++        else:
++            revision_text = ""
++    except TypeError:
+         revision_text = ""
+     return revision_text

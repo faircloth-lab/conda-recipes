@@ -1,0 +1,64 @@
+package:
+  name: dendropy
+  version: !!str 4.0.0
+
+source:
+  fn: v4.0.0.tar.gz
+  url: https://github.com/jeetsukumaran/DendroPy/archive/v4.0.0.tar.gz
+  sha1: 06de30b94fdb9a77c67938c21c5284c67662aff4
+  patches:
+    - init.patch
+
+build:
+  entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - dendropy = dendropy:main
+    #
+    # Would create an entry point called dendropy that calls dendropy.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - setuptools
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - dendropy
+    - dendropy.calculate
+    - dendropy.dataio
+    - dendropy.datamodel
+    - dendropy.interop
+    - dendropy.legacy
+    - dendropy.mathlib
+    - dendropy.model
+    - dendropy.simulate
+    - dendropy.test
+    - dendropy.utility
+    - dendropy.utility.libexec
+
+  commands:
+    - sumtrees.py -h
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://packages.python.org/DendroPy/
+  license: BSD License
