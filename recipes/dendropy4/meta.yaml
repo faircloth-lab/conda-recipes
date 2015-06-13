@@ -3,9 +3,10 @@ package:
   version: !!str 4.0.0
 
 source:
-  fn: v4.0.0.tar.gz
-  url: https://github.com/jeetsukumaran/DendroPy/archive/v4.0.0.tar.gz
-  sha1: 06de30b94fdb9a77c67938c21c5284c67662aff4
+  #fn: v4.0.0.tar.gz
+  #url: https://github.com/jeetsukumaran/DendroPy/archive/v4.0.0.tar.gz
+  #sha1: 06de30b94fdb9a77c67938c21c5284c67662aff4
+  git_url: https://github.com/jeetsukumaran/DendroPy.git
   patches:
     - init.patch
 
@@ -21,7 +22,7 @@ build:
 
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  # number: 1
+  number: 1
 
 requirements:
   build:
